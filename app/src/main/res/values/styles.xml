@@ -1,0 +1,37 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <!-- 基础字体样式. -->
+    <style name="TextBase" parent="@android:style/Widget.TextView">
+        <item name="android:textColor">@color/black_gray</item>
+        <item name="android:textSize">@dimen/text_size_normal</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+
+    <style name="tips_anim">
+        <item name="android:windowEnterAnimation">
+            @anim/tips_anim
+        </item>
+        <item name="android:windowExitAnimation">
+            @anim/tips_anim_out
+        </item>
+    </style>
+
+    <style name="WelcomeTheme" parent="@android:style/Theme.Light.NoTitleBar.Fullscreen">
+        <item name="colorPrimary">@color/white</item>
+        <item name="colorPrimaryDark">@color/white</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowBackground">@color/colorPrimary</item>
+    </style>
+    <style name="AppWelcome" parent="android:Theme.Translucent.NoTitleBar.Fullscreen">
+        <item name="android:windowBackground">@color/colorPrimary</item>
+    </style>
+    <style name="AppWelcomeTranslucent" parent="android:Theme.Translucent.NoTitleBar.Fullscreen"/>
+</resources>

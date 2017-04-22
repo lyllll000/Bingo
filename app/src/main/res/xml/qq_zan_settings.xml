@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <EditTextPreference
+        android:defaultValue="999"
+        android:dialogTitle="设置点赞个数"
+        android:hint="1~599"
+        android:inputType="number"
+        android:key="KEY_QQZ_NUMBER"
+        android:summary="点赞10个好友"
+        android:title="点赞个数" />
+    <ListPreference
+        android:defaultValue="8"
+        android:dialogTitle="设置点赞次数"
+        android:entries="@array/qq_zan_times"
+        android:entryValues="@array/qq_zan_times"
+        android:key="KEY_QQZ_TIMES"
+        android:summary="每个好友点赞8次"
+        android:title="点赞次数" />
+    <EditTextPreference
+        android:defaultValue="0"
+        android:dialogTitle="设置点赞延时(毫秒)"
+        android:hint="单位毫秒(1秒=1000毫秒)"
+        android:inputType="number"
+        android:key="KEY_QQZ_DELAY_TIME"
+        android:title="点赞延时"
+        android:summary="500毫秒后赞下一个好友"/>
+    <EditTextPreference
+        android:dialogTitle="设置黑名单（以“#”隔开）"
+        android:hint="昵称1#昵称2#昵称3"
+        android:inputType="text"
+        android:title="黑名单"
+        android:key="KEY_BLACK_LIST"
+        android:summary="此名单好友将被跳过"/>
+</PreferenceScreen>

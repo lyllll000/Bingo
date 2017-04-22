@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="通用设置">
+        <SwitchPreference
+            android:title="锁屏抢红包"
+            android:summary="请勿设置锁屏密码或指纹"
+            android:key="KEY_LOCKED_GET_HONGBAO"
+            android:defaultValue="false"/>
+    </PreferenceCategory>
+    <PreferenceCategory android:title="微信设置">
+        <ListPreference
+            android:defaultValue="0"
+            android:dialogTitle="发现红包后"
+            android:entries="@array/mm_mode_title"
+            android:entryValues="@array/mm_mode_value"
+            android:key="KEY_MM_MODE"
+            android:summary="@string/mm_mode_0"
+            android:title="@string/mm_mode_title" />
+
+        <ListPreference
+            android:defaultValue="0"
+            android:dialogTitle="@string/after_get_title"
+            android:entries="@array/mm_after_get_title"
+            android:entryValues="@array/mm_after_get_value"
+            android:key="KEY_MM_AFTER_GET_HONGBAO"
+            android:summary="@string/mm_after_get_mode_0"
+            android:title="@string/after_get_title" />
+
+        <EditTextPreference
+            android:defaultValue="50"
+            android:dialogTitle="设置延迟时间(毫秒)"
+            android:hint="单位毫秒(1秒=1000毫秒)"
+            android:inputType="number"
+            android:key="KEY_MM_DELAY_TIME"
+            android:title="@string/open_delayed_time" />
+
+        <ListPreference
+            android:defaultValue="0"
+            android:dialogTitle="@string/after_open_title"
+            android:entries="@array/mm_after_open_title"
+            android:entryValues="@array/mm_after_open_value"
+            android:key="KEY_MM_AFTER_OPEN_HONGBAO"
+            android:summary="@string/mm_after_open_mode_0"
+            android:title="@string/after_open_title" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="QQ设置">
+        <ListPreference
+            android:defaultValue="0"
+            android:dialogTitle="发现红包后"
+            android:entries="@array/qq_mode_title"
+            android:entryValues="@array/qq_mode_value"
+            android:key="KEY_QQ_MODE"
+            android:summary="@string/mm_mode_0"
+            android:title="@string/mm_mode_title" />
+
+        <ListPreference
+            android:defaultValue="0"
+            android:dialogTitle="@string/after_open_title"
+            android:entries="@array/mm_after_open_title"
+            android:entryValues="@array/mm_after_open_value"
+            android:key="KEY_QQ_AFTER_OPEN_HONGBAO"
+            android:summary="@string/mm_after_open_mode_0"
+            android:title="@string/after_open_title" />
+    </PreferenceCategory>
+</PreferenceScreen>

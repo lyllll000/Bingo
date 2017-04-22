@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/ln_tip_dialog"
+    android:background="@mipmap/float_activity_bg">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@mipmap/ic_tips_mm"
+            android:layout_marginTop="45dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:paddingTop="50dp"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:drawableLeft="@mipmap/ic_lucky_money"
+                android:drawablePadding="8dp"
+                android:textColor="@color/colorTipFloat"
+                android:text="999个红包"
+                android:id="@+id/tv_count_hongbao_mm" />
+            <View
+                android:layout_width="2dp"
+                android:layout_height="16dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:drawableLeft="@mipmap/ic_money"
+                android:drawablePadding="8dp"
+                android:textColor="@color/colorTipFloat"
+                android:text="12312"
+                android:id="@+id/tv_count_money_mm" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="2dp"
+            android:layout_height="45dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@mipmap/ic_tips_qq"
+            android:layout_marginTop="45dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:paddingTop="50dp"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:drawableLeft="@mipmap/ic_lucky_money"
+                android:drawablePadding="8dp"
+                android:textColor="@color/colorTipFloat"
+                android:text="999个红包"
+                android:id="@+id/tv_count_hongbao_qq" />
+            <View
+                android:layout_width="2dp"
+                android:layout_height="16dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:drawableLeft="@mipmap/ic_money"
+                android:drawablePadding="8dp"
+                android:textColor="@color/colorTipFloat"
+                android:text="12312"
+                android:id="@+id/tv_count_money_qq" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="2dp"
+            android:layout_height="45dp"/>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+        <ListPreference
+            android:title="@string/mm_mode_title"
+            android:key="KEY_QQ_MODE"
+            android:dialogTitle="发现红包后"
+            android:summary="@string/mm_mode_0"
+            android:entries="@array/mm_mode_title"
+            android:entryValues="@array/mm_mode_value"
+            android:defaultValue="0"/>
+
+        <ListPreference
+            android:title="@string/after_get_title"
+            android:key="KEY_QQ_AFTER_OPEN_HONGBAO"
+            android:dialogTitle="@string/after_open_title"
+            android:summary="@string/mm_after_open_mode_0"
+            android:entries="@array/mm_after_open_title"
+            android:entryValues="@array/mm_after_open_value"
+            android:defaultValue="0"/>
+</PreferenceScreen>
